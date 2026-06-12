@@ -4,7 +4,7 @@
 Aplicación SPA desarrollada con React, React Router y React-Bootstrap que incluye autenticación, control de acceso por roles y módulo CRUD de administración.
 
 ## Integrantes
-- [Tu nombre aquí]
+- Renato Cardenas
 
 ## Tecnologías utilizadas
 - React + Vite
