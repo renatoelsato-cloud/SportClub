@@ -12,6 +12,7 @@ import UserDashboard from "../pages/user/UserDashboard"
 import CoachDashboard from "../pages/coach/CoachDashboard"
 import AdminDashboard from "../pages/admin/AdminDashboard"
 import UserManagement from "../pages/admin/UserManagement"
+import SportsManagement from "../pages/SportsManagement"
 
 import ProtectedRoute from "./ProtectedRoute"
 import RoleRoute from "./RoleRoute"
@@ -36,6 +37,7 @@ function AppRoutes() {
         <Route path="/admin" element={<RoleRoute allowedRoles={["admin"]}><AdminLayout /></RoleRoute>}>
           <Route path="dashboard" element={<AdminDashboard />} />
           <Route path="usuarios" element={<UserManagement />} />
+          <Route path="deportes" element={<SportsManagement />} />
         </Route>
       </Routes>
     </BrowserRouter>
