@@ -22,6 +22,8 @@ function CoachLayout() {
           <Navbar.Collapse id="coach-nav">
             <Nav className="me-auto">
               <Nav.Link as={Link} to="/coach/dashboard">🏠 Inicio</Nav.Link>
+              <Nav.Link as={Link} to="/coach/mis-clases">📋 Mis Clases</Nav.Link>
+              <Nav.Link as={Link} to="/coach/mi-horario">📆 Mi Horario</Nav.Link>
             </Nav>
             <Nav className="ms-auto align-items-center">
               <NavDropdown
@@ -30,7 +32,7 @@ function CoachLayout() {
                 menuVariant="dark"
                 align="end"
               >
-                <NavDropdown.Item as={Link} to="/coach/dashboard">Mi Perfil</NavDropdown.Item>
+                <NavDropdown.Item as={Link} to="/coach/perfil">Mi Perfil</NavDropdown.Item>
                 <NavDropdown.Divider />
                 <NavDropdown.Item onClick={handleLogout}>Cerrar Sesión</NavDropdown.Item>
               </NavDropdown>

@@ -22,6 +22,8 @@ function UserLayout() {
           <Navbar.Collapse id="user-nav">
             <Nav className="me-auto">
               <Nav.Link as={Link} to="/user/dashboard">🏠 Inicio</Nav.Link>
+              <Nav.Link as={Link} to="/user/clases">🏃 Clases Disponibles</Nav.Link>
+              <Nav.Link as={Link} to="/user/reservas">📅 Mis Reservas</Nav.Link>
             </Nav>
             <Nav className="ms-auto align-items-center">
               <NavDropdown
@@ -30,7 +32,7 @@ function UserLayout() {
                 menuVariant="dark"
                 align="end"
               >
-                <NavDropdown.Item as={Link} to="/user/dashboard">Mi Perfil</NavDropdown.Item>
+                <NavDropdown.Item as={Link} to="/user/perfil">Mi Perfil</NavDropdown.Item>
                 <NavDropdown.Divider />
                 <NavDropdown.Item onClick={handleLogout}>Cerrar Sesión</NavDropdown.Item>
               </NavDropdown>

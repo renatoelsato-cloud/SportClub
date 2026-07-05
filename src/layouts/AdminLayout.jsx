@@ -1,5 +1,5 @@
 import { Link, Outlet, useNavigate } from "react-router-dom"
-import { Button, Container, Nav, Navbar, NavDropdown } from "react-bootstrap"
+import { Container, Nav, Navbar, NavDropdown } from "react-bootstrap"
 import { logout, getUser } from "../services/authService"
 
 function AdminLayout() {
@@ -22,7 +22,11 @@ function AdminLayout() {
           <Navbar.Collapse id="admin-nav">
             <Nav className="me-auto">
               <Nav.Link as={Link} to="/admin/dashboard">📊 Dashboard</Nav.Link>
-              <Nav.Link as={Link} to="/admin/usuarios">👥 Gestión de Usuarios</Nav.Link>
+              <Nav.Link as={Link} to="/admin/usuarios">👥 Usuarios</Nav.Link>
+              <Nav.Link as={Link} to="/admin/deportes">🏅 Deportes</Nav.Link>
+              <Nav.Link as={Link} to="/admin/salas">🏢 Salas</Nav.Link>
+              <Nav.Link as={Link} to="/admin/asignaciones">🔗 Asignaciones</Nav.Link>
+              <Nav.Link as={Link} to="/admin/horarios">📅 Horarios</Nav.Link>
             </Nav>
             <Nav className="ms-auto align-items-center">
               <NavDropdown
@@ -31,7 +35,7 @@ function AdminLayout() {
                 menuVariant="dark"
                 align="end"
               >
-                <NavDropdown.Item as={Link} to="/admin/dashboard">Mi Perfil</NavDropdown.Item>
+                <NavDropdown.Item as={Link} to="/admin/perfil">Mi Perfil</NavDropdown.Item>
                 <NavDropdown.Divider />
                 <NavDropdown.Item onClick={handleLogout}>Cerrar Sesión</NavDropdown.Item>
               </NavDropdown>
